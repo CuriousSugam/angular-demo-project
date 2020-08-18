@@ -1,0 +1,11 @@
+.container {
+  width: 1000px;
+  margin: 20px auto;
+}
+.sidebar-wrapper {
+  float: left;
+}
+.content-wrapper {
+  float: right;
+  padding: 20px;
+}

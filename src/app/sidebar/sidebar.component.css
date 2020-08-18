@@ -1,0 +1,31 @@
+app-sidebar {
+  display: inline-block;
+}
+
+.app-sidebar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(100vh - 64px);
+  border: 1px solid #eeeeee;
+  display: inline-block;
+}
+
+.app-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.app-sidebar a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.app-sidebar .active {
+  background: #cccccc;
+}
+
+.app-sidebar a:hover {
+  background: #cccccc;
+}

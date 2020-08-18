@@ -1,0 +1,70 @@
+<div class="product-list-container">
+  <!-- Search -->
+  <div class="search-wrapper">
+    <mat-form-field appearance="outline">
+      <input
+        matInput
+        placeholder="Search"
+        [formControl]="search"
+        type="text"
+        name="search"
+        [(ngModel)]="searchString"
+      />
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+
+  <!-- Product List -->
+  <div class="product-list-heading">
+    <h2>Products</h2>
+    <button mat-raised-button color="primary" (click)="onAddProduct()">
+      Add Product
+    </button>
+  </div>
+  <div class="products-list-wrapper" *ngIf="!isLoading">
+    <mat-card
+      class="product-wrapper"
+      *ngFor="let product of products | searchProducts: searchString:'name'"
+      (click)="onProductClick(product.id)"
+    >
+      <mat-card-content>
+        <img [src]="product.images[0]" [alt]="product.name" />
+        <span class="product-name">{{ product.name | titlecase }}</span>
+        <span class="product-code">
+          <strong>Code:</strong> {{ product.code }}
+        </span>
+        <p class="product-description">
+          {{ product.description | shorten: 150 }}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- Loaders -->
+  <div *ngIf="isLoading">
+    <div class="skeleton-wrapper">
+      <div class="skeleton-content product-image"></div>
+      <div class="skeleton-title product-title"></div>
+      <div class="skeleton-title product-title"></div>
+      <div class="skeleton-content product-description"></div>
+    </div>
+    <div class="skeleton-wrapper">
+      <div class="skeleton-content product-image"></div>
+      <div class="skeleton-title product-title"></div>
+      <div class="skeleton-title product-title"></div>
+      <div class="skeleton-content product-description"></div>
+    </div>
+    <div class="skeleton-wrapper">
+      <div class="skeleton-content product-image"></div>
+      <div class="skeleton-title product-title"></div>
+      <div class="skeleton-title product-title"></div>
+      <div class="skeleton-content product-description"></div>
+    </div>
+    <div class="skeleton-wrapper">
+      <div class="skeleton-content product-image"></div>
+      <div class="skeleton-title product-title"></div>
+      <div class="skeleton-title product-title"></div>
+      <div class="skeleton-content product-description"></div>
+    </div>
+  </div>
+</div>

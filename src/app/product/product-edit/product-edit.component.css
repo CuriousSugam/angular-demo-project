@@ -1,0 +1,20 @@
+p {
+  margin: 0;
+}
+
+mat-form-field {
+  width: 250px;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected-images {
+  display: flex;
+  align-items: center;
+}
+
+.product-form-container textarea {
+  min-height: 150px;
+}

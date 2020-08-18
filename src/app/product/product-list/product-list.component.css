@@ -1,0 +1,77 @@
+mat-form-field {
+  width: 350px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.product-list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-wrapper {
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  width: 225px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product-wrapper:hover {
+  border: 1px solid #5e5e5e;
+}
+
+.product-wrapper:first-child {
+  margin-left: 0;
+}
+.product-wrapper:last-child {
+  margin-right: 0;
+}
+
+.product-wrapper img {
+  width: 200px;
+}
+
+.product-wrapper .product-name {
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+  padding: 10px 0;
+}
+
+.product-wrapper .product-code {
+  display: block;
+  font-size: 12px;
+  color: #5e5e5e;
+}
+
+.product-wrapper .product-description {
+  font-size: 12px;
+  color: #5e5e5e;
+}
+
+/* Skeleton CSS Styles */
+
+.skeleton-wrapper {
+  display: inline-block;
+  width: 225px;
+  margin: 10px;
+  height: 250px;
+}
+.skeleton-content.product-image {
+  height: 128px;
+  margin-bottom: 10px;
+}
+
+.skeleton-title.product-title {
+  width: 100%;
+}
+.skeleton-content.product-description {
+  height: 55px;
+}

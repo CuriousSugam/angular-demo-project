@@ -1,0 +1,15 @@
+<app-server *ngFor="let server of servers"></app-server>
+
+<button class="btn" [disabled]="!allowNewServer" (click)="onCreateServer()">
+  Add Server
+</button>
+
+<p>Server create status: {{ serverCreateStatus }}</p>
+
+<p *ngIf="serverCreateStatus; else noServer">
+  New server was created! Server Name: {{ serverName }}
+</p>
+
+<ng-template #noServer>
+  <p>No Server was created!</p>
+</ng-template>

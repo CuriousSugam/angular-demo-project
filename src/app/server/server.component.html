@@ -1,0 +1,22 @@
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sunt fugit
+  dignissimos consectetur nesciunt veritatis numquam quasi qui atque omnis rerum
+  veniam reprehenderit harum quam eum sequi iure, nostrum vitae.
+</p>
+<p>
+  Server ID: {{ serverID }} <br />
+  Server Name: {{ getServerName() }} <br />
+  Server Status: {{ getServerStatus() }}
+</p>
+<hr />
+<br />
+
+<button class="btn btn-primary" (click)="onLoadServer(1)">
+  Load Server: 1
+</button>
+<button class="btn btn-primary" (click)="onLoadServer(2)">
+  Load Server: 2
+</button>
+<button class="btn btn-primary" (click)="onLoadServer(3)">
+  Load Server: 3
+</button>
