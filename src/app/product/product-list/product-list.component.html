@@ -24,7 +24,7 @@
   <div class="products-list-wrapper" *ngIf="!isLoading">
     <mat-card
       class="product-wrapper"
-      *ngFor="let product of products | searchProducts: searchString:'name'"
+      *ngFor="let product of products | search: searchString:'name'"
       (click)="onProductClick(product.id)"
     >
       <mat-card-content>
