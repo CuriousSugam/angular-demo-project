@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -15,13 +14,14 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductRoutingModule } from './product.routing.module';
 
 import { SharedModule } from '../shared/shared.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [ProductComponent, ProductEditComponent, ProductListComponent],
   imports: [
+    SharedModule,
     CommonModule,
     ProductRoutingModule,
-    SharedModule,
     MatSidenavModule,
     MatIconModule,
     MatInputModule,

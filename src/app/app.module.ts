@@ -15,6 +15,8 @@ import { ServersComponent } from './servers/servers.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CatalogComponent } from './catalog/catalog.component';
 
+import { QuicklinkModule } from 'ngx-quicklink';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,7 @@ import { CatalogComponent } from './catalog/catalog.component';
   ],
   imports: [
     BrowserModule,
+    QuicklinkModule,
     AppRoutingModule,
     MatToolbarModule,
     BrowserAnimationsModule,
