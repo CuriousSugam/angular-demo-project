@@ -14,7 +14,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ServersComponent } from './servers/servers.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CatalogComponent } from './catalog/catalog.component';
-import { ProductModule } from './product/product.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import { ProductModule } from './product/product.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProductModule,
     MatToolbarModule,
     BrowserAnimationsModule,
   ],
