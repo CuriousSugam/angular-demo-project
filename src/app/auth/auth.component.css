@@ -1,0 +1,23 @@
+h2 {
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 200;
+}
+
+mat-form-field {
+  width: 400px;
+}
+
+.login-form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.hint {
+  color: lightgrey;
+}
+
+.error-message {
+  color: red;
+}

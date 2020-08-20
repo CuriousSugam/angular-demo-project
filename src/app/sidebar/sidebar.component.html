@@ -1,4 +1,4 @@
-<div class="app-sidebar">
+<div class="app-sidebar" *ngIf="isLoggedIn">
   <ul>
     <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
       <a routerLink="/home">Home</a>
